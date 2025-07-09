@@ -70,8 +70,8 @@ class VinaWrapper:
             pdb_filename = pdb_file_path.name
             pdbqt_filename = Path(output_file).name
             cmd = [
-                '/fs/ess/PAA0203/xing244/packages/mgltools_x86_64Linux2_1.5.7/bin/pythonsh',
-                '/fs/ess/PAA0203/xing244/packages/mgltools_x86_64Linux2_1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py',
+                'mgltools_x86_64Linux2_1.5.7/bin/pythonsh',
+                'mgltools_x86_64Linux2_1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py',
                 '-l', pdb_filename,
                 '-o', pdbqt_filename,
                 '-A', 'hydrogens'
@@ -105,8 +105,8 @@ class VinaWrapper:
             
             pdbqt_filename = Path(output_file).name
             cmd = [
-                '/fs/ess/PAA0203/xing244/packages/mgltools_x86_64Linux2_1.5.7/bin/pythonsh',
-                '/fs/ess/PAA0203/xing244/packages/mgltools_x86_64Linux2_1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py',
+                'mgltools_x86_64Linux2_1.5.7/bin/pythonsh',
+                'mgltools_x86_64Linux2_1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py',
                 '-r', pdb_filename,
                 '-o', pdbqt_filename,
                 '-A', 'checkhydrogens'
